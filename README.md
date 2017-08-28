@@ -57,4 +57,18 @@ Django URL 設定 - 在 mysite/urls.py 中設定
 
 輸入 http://127.0.0.1:8000/hello/ => 就會看到result了
 
+---------------- 
+
+Django admin 介面 => django 內建管理介面 => 確定 settings.py 裡的 INSTALLED_APPS 裡有 django.contrib.admin
+
+設定 URL(mysite/urls.py) =>  url(r'^admin/', include(admin.site.urls)),
+
+建立 super user
+
+python manage.py makemigrations
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
 
