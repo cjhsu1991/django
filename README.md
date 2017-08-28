@@ -77,4 +77,26 @@ python manage.py migrate
 
 python manage.py createsuperuser
 
+設置 custom template 
+
+於 D:\git\django\mySite 底下設置 templates 資料夾
+
+修改 mySite/settings.py
+
+TEMPLATES中的'DIRS': [] 改成 'DIRS': [os.path.join(BASE_DIR, 'templates').replace('\\', '/')],
+
+----------------
+
+資料庫設置
+
+mySite/settings.py 可設置資料庫
+
+ENGINE -- 
+
+MySQL: django.db.backends.mysql
+
+SQLite 3: django.db.backends.sqlite3
+
+PostgreSQL: django.db.backends.postgresql_psycopg2
+
 
