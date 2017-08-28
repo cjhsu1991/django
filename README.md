@@ -2,9 +2,11 @@
 
 ------------------------------------------------
 
-django girl 教學: https://djangogirlstaipei.herokuapp.com/tutorials/
+django girl 教學: 
 
-				  https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/django/views_and_urlconfs.html
+https://djangogirlstaipei.herokuapp.com/tutorials/
+
+https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/django/views_and_urlconfs.html
 
 ------------------------------------------------
 
