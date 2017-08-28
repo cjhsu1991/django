@@ -99,4 +99,39 @@ SQLite 3: django.db.backends.sqlite3
 
 PostgreSQL: django.db.backends.postgresql_psycopg2
 
+----------------
+
+Django Model => Django 會依據 trips(自己新建的app)/models.py 設定的類別及定義來建資料表
+
+# example
+
+class Article(models.Model):
+    
+	title = models.CharField(max_length=100)
+    
+	content = models.TextField(blank=True)
+    
+	photo = models.URLField(blank=True)
+    
+	created_at = models.DateTimeField(auto_now_add=True)
+
+	updated_at = models.DateTimeField(auto_now_add=True)
+	
+註冊此 Model class 讓此Table 可以從後台編輯
+
+	#trips/admin.py
+	
+	#add from .models import Article
+	
+	admin.site.register(Article)
+	
+----------------
+
+同步資料庫
+
+在虛擬環境的 D:\git\django\mySite 執行 python manage.py makemigrations
+
+在虛擬環境的 D:\git\django\mySite 執行 python manage.py migrate
+
+
 
