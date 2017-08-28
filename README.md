@@ -31,3 +31,30 @@ step 5 :開始安裝django => pip install "django<1.9" => 如何確定 django �
 在虛擬環境中執行 => django-admin.py startproject mySite
 
 啟動開發環境 => 切換到mySite => python manage.py runserver
+
+---------------- 
+
+建立Django app
+
+在虛擬環境 mySite 底下執行 - python manage.py startapp trips
+
+將新增的 app 加入設定檔中 => mySite 的 settings.py 中找到 INSTALLED_APPS 加入 trips
+
+建立 View (一個function 處理 HttpRequest 回傳 HttpResponse)
+
+在 trips/views.py 中定義 
+
+from django.http import HttpResponse
+
+def hello(request):
+    return HttpResponse("Hello World!")
+	
+Django URL 設定 - 在 mysite/urls.py 中設定
+
+先import view => from trips.views import hello
+
+在urlpatterns 中加入 => url(r'^hello/$', hello),
+
+輸入 http://127.0.0.1:8000/hello/ => 就會看到result了
+
+
