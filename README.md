@@ -2,11 +2,17 @@
 
 ------------------------------------------------
 
+### git config --global core.autocrlf input ###
+
 django girl 教學: 
 
 https://djangogirlstaipei.herokuapp.com/tutorials/
 
 https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/django/views_and_urlconfs.html
+
+django project : 
+
+https://www.djangoproject.com/
 
 ------------------------------------------------
 
