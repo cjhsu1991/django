@@ -4,6 +4,7 @@
 
 django girl 教學: https://djangogirlstaipei.herokuapp.com/tutorials/
 				  https://djangogirlstaipei.gitbooks.io/django-girls-taipei-tutorial/django/views_and_urlconfs.html
+
 ------------------------------------------------
 
 step 1 : 安裝python 3.5
