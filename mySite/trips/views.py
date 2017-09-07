@@ -7,3 +7,6 @@ from datetime import datetime
 def hello(request):
     return render(request, 'hello_world.html', {'current_time':str(datetime.now())})
 	#return HttpResponse("Hello World!")
+
+def highchart(request):
+	return HttpResponse("Highchart Page")

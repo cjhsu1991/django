@@ -14,9 +14,10 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from trips.views import hello
+from trips.views import hello, highchart
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 	url(r'hello/$', hello),
+	url(r'highchart/$', highchart), 
 ]
